@@ -534,7 +534,7 @@ table td{
 }
 
 .hero-image-wrap {
-  background: var(--white-color);
+  background: #1c545f;
   border-radius: 100%;
   width: 350px;
   height: 350px;
@@ -755,7 +755,7 @@ table td{
 
 
 /*---------------------------------------
-  PROJECTS              
+ EXPERIENCES         
 -----------------------------------------*/
 .projects-thumb {
   background: var(--section-bg-color);
@@ -803,6 +803,178 @@ table td{
   color: var(--secondary-color);
   text-transform: uppercase;
   margin-bottom: 5px;
+}
+
+/*--------------------------------------
+Pro-jects (portfolio)
+----------------------------------------*/
+#portfolio {
+  color: #fff;
+  padding: 150px 0;
+}
+[data-tab-content] {
+  display: none;
+  position: unset;
+}
+.active[data-tab-content] {
+  display: block;
+}
+.tabs {
+  display: flex;
+  margin: 30px 0;
+  justify-content: center;
+}
+.tabs .tab {
+  font-size: 1.4em;
+  color: #868686;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-right: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+  position: relative;
+}
+.tabs .tab:after {
+  content: ".";
+  font-size: 2em;
+  line-height: 0;
+  color: #868686;
+  position: absolute;
+  top: 15px;
+  right: -11px;
+}
+.tabs .tab:last-child:after {
+  content: "";
+}
+.tabs .tab.active,
+.tabs .tab:hover {
+color: #000;
+}
+.tab-content {
+  position: relative;
+  margin-bottom: 60px;
+}
+.tab-content .tab-element {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+.tab-content .tab-element figure {
+  width: 30%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.tab-element figure:hover:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.tab-content .tab-element figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 32px;
+  z-index: 9;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s ease-out;
+}
+.tab-content .tab-element figure:hover figcaption {
+  bottom: 30px;
+  opacity: 1;
+}
+.tab-content .tab-element .caption {
+  width: 60%;
+  margin-right: 20px;
+  color: #e9eaeb;
+}
+.tab-content .tab-element .caption a{
+  color: #ffffff;
+}
+
+.tab-content .tab-element .caption a:hover{
+  color         : var(--secondary-color);
+  border-bottom : 1px solid var(--secondary-color);
+}
+
+.tab-content .tab-element h3 {
+  font-size: 1.6em;
+  text-transform: capitalize;
+  margin: 0;
+  color: #e9eaeb;
+}
+
+.tab-content .tab-element .btn-arrow.light {
+  width: 10%;
+}
+.hero__more-link {
+  display        : inline-block;
+  color          : #000000;
+  font-weight    : 500;
+  font-size      : 1.15rem;
+  letter-spacing : 0.25rem;
+  text-transform: uppercase;
+  border-bottom  : 1px solid transparent;
+  text-decoration: underline;
+}
+
+.hero__more-link:focus,
+.hero__more-link:hover {
+  color         : var(--secondary-color);
+}
+
+.tab-content .tab-element img {
+  display: inline-block;
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.tab-content .tab-element i{
+  color: #ffffff;
+}
+
+.tabs li{
+  box-shadow: none;
+  list-style: none;
+}
+
+@media screen and (max-width: 900px){
+.tab-content .tab-element .caption {
+    width: 100%;
+}
+.tab-content .tab-element h3 {
+    font-size: 1.2em;
+}
+}
+@media screen and (max-width: 700px){
+.tabs .tab {
+    font-size: 1em;
+    padding: 5px;
+}
+}
+@media screen and (max-width: 656px){
+.tab-content .tab-element figure {
+    width: 45%;
+}
+}
+@media screen and (max-width: 456px){
+.tab-content .tab-element figure {
+    width: 100%;
+    margin-right: 0;
+}
 }
 
 
