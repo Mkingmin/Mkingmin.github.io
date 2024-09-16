@@ -1,1 +1,1 @@
-That repository is created for my portfolio
+This is my portfolio. Check out at https://mkingmin.github.io/
