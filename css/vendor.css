@@ -24,7 +24,7 @@ pre[class*="language-"] {
     color           : #f8f8f2;
     background      : none;
     text-shadow     : 0 1px rgba(0, 0, 0, 0.3);
-    font-family     : var(--font-mono);
+    font-family     : 'Courier New', Courier, monospace;
     font-size       : calc(var(--text-size) * 0.9444);
     text-align      : left;
     white-space     : pre;
@@ -156,6 +156,65 @@ pre[class*="language-"] {
 :root {
     --swiper-theme-color : #007aff;
 }
+
+.container #content {
+display: inline-flex;
+width: 100%;
+    }
+    
+      
+    
+#toggleButton {
+position: relative;
+display: inline-block;
+letter-spacing: 3px;
+text-transform: initial;
+display: inline-flex;
+width: auto;
+}
+    
+#toggleButton i {
+margin-left: 20px;
+display: block;
+width: auto;
+    }
+    
+      
+    
+.hidden {
+display: none;
+}
+    
+.image-show {
+text-align: center;
+width: 100%;
+}
+    
+      
+    
+@media (max-width: 780px) {
+#toggleButton {
+font-size: 15px;
+width: 100%;
+}
+    
+.container #content {
+width: auto;
+}
+    
+#toggleButton i {
+width: 100%;
+}
+    }
+    
+      
+    
+@media (max-width: 590px) {
+#toggleButton {
+font-size: 12px;
+width: 80%;
+}
+    }
 
 .swiper-container {
     margin-left  : auto;
