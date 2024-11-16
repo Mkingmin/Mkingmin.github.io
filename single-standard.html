@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="images/logo_icon-02.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     
 
     <!-- favicons
@@ -192,8 +193,34 @@
                                     <br><br>
                                     As a result, there is a growing need for Machine Learning (ML) models that can make high-accuracy predictions on unlabeled input datasets and handle diverse types of data. This will enable the application of these models in downstream tasks related to personalized user experience (UX) to improve customer satisfaction.
                                     </p>
+                                    <h3>Executive Summary</h3>
+                                     <div class="container">
+                                        <div id="content" class="content hidden">
+                                            <button id="toggleButton" aria-expanded="false">Show full diagram of Executive Summary<i class="bi bi-arrow-down-square-fill"></i></button>
+                                        </div>
+                                        <div id="hidden" class="hidden image-show"></div>
+                                    </div>
+                                    <!---End the executive summary section-->
 
                                     <h2>User problems landscape</h2>
+                                    <!--Add a Psych framework-->
+                                    <h3>Psych framework</h3>
+                                    <p><a href="https://blog.logrocket.com/product-management/psych-framework-definition/">Psych framework</a> is used to visualize the level of emotional satisfaction within the user experience, thereby identifying the phases where the user experience is not yet optimized. This serves as a basis for uncovering the root cause of the increased bounce rate. ‘Required psych’ refers to the necessary motivation for a user to complete a specific task on the product, while ‘Actual psych’ denotes their actual motivation and emotional state while performing that task.
+                                        <br><br>
+                                    Psych framework is used in conjunction with the scoring rules of the Perfect 1000 system proposed by <a href="https://www.fintechinsights.io/blog/methodology-for-ux">Fintech Insight</a>
+                                    <br><br>
+                                    The principle of the <b>Perfect 1000 system</b> scoring is that each user journey begins with an initial psych score of 1000. This psych level is then adjusted—either increased or decreased—based on the motivation or emotional value of the user at each specific task they must complete within their journey.
+                                    <br><br>
+                                    Scores are recorded on the <b>Required psych</b> scale based on UX data from various Fintech products. This data is highly representative as, in terms of functionality, Fintech products do not vary significantly. The author believes that this value can be utilized for reference purposes. For the values on the <b>Actual psych</b> scale, these are derived from secondary data collected through real user surveys. Due to information security concerns, the author has adjusted some data points in the dataset but has ensured that the goal of practicing skills in developing technological solutions—the main objective of this project—remains intact.
+                                    </p>
+                                    <figure class="featured-image">
+                                    <img src="images/projects/personalized_tutorial_psych_frame.png">
+                                    </figure>
+                                    <p>The Required psych and Actual psych curves are nearly identical in shape, with the Actual psych values being lower by approximately 350 to 400 points on average. The only stage where user interaction with the Tutorial diverges in shape is when the Required and Actual curves differ significantly. This indicates a gap between expectations and reality, as the product team anticipates that the tutorial will enhance user interaction with their product and result in high levels of UX satisfaction. However, the opposite is true; interaction with the tutorial not only fails to add positive value to the user’s psych but also brings negative value, suggesting that users are struggling with the tutorial.
+                                    <br><br>
+                                     The results presented in the Psych diagram indicate that the user interaction phase with the tutorial is likely a contributing factor to negative business outcomes. There is an urgent need for a deeper analysis of the user experience during this phase. <i>What has led users to lose interest in the tutorials? Are they facing frustrations or difficulties? Why is this the case?</i> These are all questions that need to be answered in the Problem Analysis section, which will be conducted using research techniques and user demand elicitation.
+                                    </p>
+                                    <h3>Core problem</h3>
                                     <p>
                                         Tutorials are a vital component of Fintech apps and websites, serving as an introduction to features and providing users with step-by-step instructions on how to effectively use them. However, a common pain point arises when users are presented with generic tutorials that fail to account for their individual level of technical expertise.
                                         <br><br>
@@ -463,6 +490,7 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/clickButtonToShowUp.js"></script>
 
 </body>
 </html>
